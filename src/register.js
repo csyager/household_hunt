@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, FormControl } from 'react-bootstrap';
+import Welcome from './Welcome'
 import './App.css';
 
 class RegisterForm extends React.Component {
@@ -26,8 +27,8 @@ class RegisterForm extends React.Component {
                     Enter your name to play:<br />
                     <FormControl type="text" name="name" value={this.state.value} onChange={this.handleChange} placeholder="Name" />
                 </label><br />
-                <Button variant="primary" type="submit">Start a Game</Button>&nbsp;&nbsp;
-                <Button variant="secondary" type="submit">Join a Game</Button>
+                <Button variant="primary" name="start" type="submit">Start a Game</Button>&nbsp;&nbsp;
+                <Button variant="secondary" name="join" type="submit">Join a Game</Button>
             </form>
         );
     }
