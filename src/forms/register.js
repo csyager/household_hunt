@@ -17,7 +17,7 @@ class RegisterForm extends React.Component {
     }
 
     handleSubmit(event) {
-        alert("Name: " + this.state.value);
+        
     }
 
     render() {

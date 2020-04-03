@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import Welcome from './Welcome';
+import Join from './Join';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <BrowserRouter>
             <div>
               <Route exact path="/" component={Welcome} />
+              <Route path="/join" component={Join} />
             </div>
           </BrowserRouter>
         </header>
