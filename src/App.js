@@ -1,25 +1,36 @@
-import React from 'react';
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { Card, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import fire from './fire';
+import RegisterForm from './register';
 import logo from './logo.svg';
 import './App.css';
 
+class Welcome extends Component {
+  render() {
+    return (
+      <Card>
+        <Card.Body>
+          <Card.Title style={{ color: "black" }}>Welcome to Household Hunt</Card.Title>
+          <Card.Text style={{ color: "black" }}>
+            <RegisterForm />
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    );
+  }
+}
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    ReactDOM.render(
+      <div className="App">
+        <header className="App-header">
+          <Welcome />
+        </header>
+    </div>        
+    , document.getElementById("root")) 
   );
 }
 
