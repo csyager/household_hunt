@@ -1,35 +1,27 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Card, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import fire from './fire';
-import RegisterForm from './register';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
+import Welcome from './Welcome';
+import Join from './Join';
 
-class Welcome extends Component {
-  render() {
-    return (
-      <Card>
-        <Card.Body>
-          <Card.Title style={{ color: "black" }}>Welcome to Household Hunt</Card.Title>
-          <Card.Text style={{ color: "black" }}>
-            <RegisterForm />
-          </Card.Text>
-        </Card.Body>
-      </Card>
-    );
-  }
-}
 
 function App() {
   return (
     ReactDOM.render(
       <div className="App">
         <header className="App-header">
-          <Welcome />
+        <BrowserRouter>
+            <div>
+              <Route exact path="/" component={Welcome} />
+              <Route path="/join" component={Join} />
+            </div>
+          </BrowserRouter>
         </header>
-    </div>        
+      </div>        
     , document.getElementById("root")) 
   );
 }
