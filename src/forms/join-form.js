@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, FormControl } from 'react-bootstrap';
-import './App.css';
+import '../App.css';
+import fire from '../components/fire';
 
 class JoinForm extends React.Component {
     constructor(props) {
@@ -16,7 +17,14 @@ class JoinForm extends React.Component {
     }
 
     handleSubmit(event) {
+        event.preventDefault();
+        var location = window.location.href;
+        location = location.split("?")[1];
+        var username = location.split("=")[1];
 
+        console.log("Redirecting to /game?username=" + username + "&id=" + this.state.value);
+
+        window.location = "/game?username=" + username + "&id=" + this.state.value;
     }
 
     render() {
@@ -26,9 +34,9 @@ class JoinForm extends React.Component {
                     Enter game ID:<br />
                     <FormControl type="text" name="name" value={this.state.value} onChange={this.handleChange} placeholder="Game ID" />
                     </label><br />
-                    <Button variant="primary" name="start" type="submit">Join Game</Button>
+                    <Button variant="primary" name="start" type="button" onClick={this.handleSubmit.bind(this)}>Join Game</Button>
             </form>
         )
     }
 }
-export default JoinForm
+export default JoinForm;

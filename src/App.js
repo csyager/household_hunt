@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import fire from './fire';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
-import logo from './logo.svg';
+import fire from './components/fire';
+import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
-import Welcome from './Welcome';
-import Join from './Join';
+import Welcome from './components/Welcome';
+import Join from './components/Join';
+import Game from './components/Game';
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
             <div>
               <Route exact path="/" component={Welcome} />
               <Route path="/join" component={Join} />
+              <Route path="/game" component={Game} />
             </div>
           </BrowserRouter>
         </header>

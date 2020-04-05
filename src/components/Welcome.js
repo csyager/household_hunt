@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Card, Button } from 'react-bootstrap';
-import RegisterForm from './register';
+import { Card } from 'react-bootstrap';
+import RegisterForm from '../forms/register';
 
 class Welcome extends Component {
     render() {
@@ -17,4 +17,4 @@ class Welcome extends Component {
     }
   }
 
-  export default Welcome
+  export default Welcome;

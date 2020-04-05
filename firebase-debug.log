@@ -1,25 +1,29 @@
-[debug] [2020-04-01T19:47:23.452Z] ----------------------------------------------------------------------
-[debug] [2020-04-01T19:47:23.453Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2020-04-01T19:47:23.454Z] CLI Version:   7.16.2
-[debug] [2020-04-01T19:47:23.454Z] Platform:      linux
-[debug] [2020-04-01T19:47:23.454Z] Node Version:  v10.16.3
-[debug] [2020-04-01T19:47:23.454Z] Time:          Wed Apr 01 2020 15:47:23 GMT-0400 (Eastern Daylight Time)
-[debug] [2020-04-01T19:47:23.454Z] ----------------------------------------------------------------------
-[debug] [2020-04-01T19:47:23.454Z] 
-[debug] [2020-04-01T19:47:23.459Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-04-01T19:47:23.460Z] > authorizing via signed-in user
-[debug] [2020-04-01T19:47:23.460Z] [iam] checking project household-hunt for permissions ["firebase.projects.get"]
-[debug] [2020-04-01T19:47:23.462Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/household-hunt:testIamPermissions  
+[debug] [2020-04-05T18:00:25.974Z] ----------------------------------------------------------------------
+[debug] [2020-04-05T18:00:25.976Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-04-05T18:00:25.976Z] CLI Version:   7.16.2
+[debug] [2020-04-05T18:00:25.976Z] Platform:      linux
+[debug] [2020-04-05T18:00:25.976Z] Node Version:  v10.16.3
+[debug] [2020-04-05T18:00:25.976Z] Time:          Sun Apr 05 2020 14:00:25 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-04-05T18:00:25.976Z] ----------------------------------------------------------------------
+[debug] [2020-04-05T18:00:25.976Z] 
+[debug] [2020-04-05T18:00:25.982Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-05T18:00:25.982Z] > authorizing via signed-in user
+[debug] [2020-04-05T18:00:25.983Z] [iam] checking project household-hunt for permissions ["firebase.projects.get"]
+[debug] [2020-04-05T18:00:25.985Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-04-05T18:00:25.985Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-04-05T18:00:26.253Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-05T18:00:26.276Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/household-hunt:testIamPermissions  
 
-[debug] [2020-04-01T19:47:23.673Z] <<< HTTP RESPONSE 200
-[debug] [2020-04-01T19:47:23.679Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/household-hunt  
+[debug] [2020-04-05T18:00:26.661Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-05T18:00:26.663Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/household-hunt  
  
-[debug] [2020-04-01T19:47:24.000Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-05T18:00:27.003Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/home/connor/code/quarantine_game/quarantine_game'...
 [info] 
-[debug] [2020-04-01T19:47:24.009Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/household-hunt/webApps/-/config  
+[debug] [2020-04-05T18:00:27.008Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/household-hunt/webApps/-/config  
  
-[debug] [2020-04-01T19:47:24.399Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-05T18:00:27.477Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: build
 [info] ✔  hosting: Local server: http://localhost:5000
