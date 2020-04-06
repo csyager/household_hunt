@@ -20,7 +20,15 @@ class RegisterForm extends React.Component {
     handleStart(event) {
         event.preventDefault();
         console.log("Adding user " + this.state.value + " to users collection.");
-        fire.database().ref('users').child('username').push(this.state.value);
+        var user_ref = fire.database().ref('users').push();
+        user_ref.set({
+            username: this.state.value
+        });
+        var game_ref = fire.database().ref('games').push();
+        game_ref.set({
+            owner: user_ref.key
+        });
+
     }
 
     handleJoin(event) {
