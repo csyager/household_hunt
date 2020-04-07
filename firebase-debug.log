@@ -27,3 +27,32 @@
 [debug] [2020-04-05T18:00:27.477Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: build
 [info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2020-04-07T19:25:40.809Z] ----------------------------------------------------------------------
+[debug] [2020-04-07T19:25:40.811Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2020-04-07T19:25:40.811Z] CLI Version:   7.16.2
+[debug] [2020-04-07T19:25:40.811Z] Platform:      linux
+[debug] [2020-04-07T19:25:40.811Z] Node Version:  v10.16.3
+[debug] [2020-04-07T19:25:40.812Z] Time:          Tue Apr 07 2020 15:25:40 GMT-0400 (Eastern Daylight Time)
+[debug] [2020-04-07T19:25:40.812Z] ----------------------------------------------------------------------
+[debug] [2020-04-07T19:25:40.812Z] 
+[debug] [2020-04-07T19:25:40.821Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-04-07T19:25:40.821Z] > authorizing via signed-in user
+[debug] [2020-04-07T19:25:40.821Z] [iam] checking project household-hunt for permissions ["firebase.projects.get"]
+[debug] [2020-04-07T19:25:40.823Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-04-07T19:25:40.823Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-04-07T19:25:41.078Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-07T19:25:41.104Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/household-hunt:testIamPermissions  
+
+[debug] [2020-04-07T19:25:41.310Z] <<< HTTP RESPONSE 200
+[debug] [2020-04-07T19:25:41.312Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/household-hunt  
+ 
+[debug] [2020-04-07T19:25:41.631Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/connor/code/quarantine_game/quarantine_game'...
+[info] 
+[debug] [2020-04-07T19:25:41.634Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/household-hunt/webApps/-/config  
+ 
+[debug] [2020-04-07T19:25:42.022Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: build
+[info] ✔  hosting: Local server: http://localhost:5000

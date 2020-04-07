@@ -25,8 +25,10 @@ class RegisterForm extends React.Component {
             username: this.state.value
         });
         var game_ref = fire.database().ref('games').push();
-        game_ref.set({
+        return game_ref.set({
             owner: user_ref.key
+        }).then(() => {
+            window.location = '/game?username=' + this.state.value + '&id=' + game_ref.key
         });
 
     }
